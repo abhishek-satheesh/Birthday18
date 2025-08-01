@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+	<title>Happy Birthday</title>
+	<style type="text/css">
+    .body{
+      background-color: #E0BBE4;
+     }
+    </style>
+</head>
+<body 0>
+	<script src="script.js"></script>
+	<img src="assets/img2.jpg" style="width: 500px; margin-left: 520px;">
+    <section class="two">
+
+        <div class="container-cotton">
+            <p>
+                It's been exactly
+            </p>
+            <div class="clock-holder">
+                <font id="days"></font>
+                <font>:</font>
+                <font id="hours"></font>
+                <font>:</font>
+                <font id="minutes"></font>
+                <font>:</font>
+                <font id="seconds"></font>
+            </div>
+            <p>
+                since the most beautiful thing happened to the earth and That's YOU 💚<br>
+                <h3>Mwuuuuuuuuaaaaaaaaaaahhhhhhhh....💋💋💋💋💋💋💋💋💋💋💋💋💋💋</h3>
+            </p>
+        </div>
+    </section>
+    <div style="text-align: center; background-color: #E0BBE4" >
+    <h2>Question 2: What brings you the most joy in our relationship?</h2>
+     <form id="quizForm">
+      <input type="radio" id="a" name="answer" value="park"><label for="a">Deep emotional conversations</label><br>
+      <input type="radio" id="b" name="answer" value="cafe"><label for="b">Quiet, peaceful time together</label><br>
+      <input type="radio" id="c" name="answer" value="cafe"><label for="c">Shared adventures and experiences</label><br>
+      <input type="radio" id="d" name="answer" value="beach"><label for="d">Physical closeness and touch</label><br><br>
+      <button type="submit" id="btn-submit">Submit</button>
+      <p id="feedback"></p>
+     </form>
+    </div>
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(e) {
+     e.preventDefault();  // Stop the default form submission
+    const choice = document.querySelector('input[name="answer"]:checked');
+
+    if (!choice) {
+      document.getElementById("feedback").textContent = "Please select an answer!";
+      return;
+    }
+
+    if (choice.id === "c") {
+      window.location.href = "page3.html";
+    } else {
+      document.getElementById("feedback").textContent = "Oops, try again!";
+    }
+  });
+</script>
+
+</body>
+</html>

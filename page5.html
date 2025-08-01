@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+	<title>Happy Birthday</title>
+</head>
+<body>
+	<section id="five">
+        <div class="container-cotton">
+        	<img src="assets/img5.jpg" style="width: 500px">
+        	<span>
+                <video width="420px" height="667px" controls="controls" style="margin-left: 70px">
+                <source src="assets/vidpg05.mp4" />
+            </span>
+            <p class="birthday-wishes">
+                Happy Birthday to the amazing soul who graced my life with her presence! 🎉🎂 Your special day is a reminder of the incredible journey we've shared and the beautiful moments that lie ahead.<br/><br/>
+
+                From the moment we met, your laughter has been the melody that dances in my heart, and your kindness has been the anchor that grounds my soul. As you embark on another year of your life's adventure, I hope it is the best year you ever had yet. May you continue to spread your infectious joy to everyone you meet, just as you've illuminated my life with your radiant smile.<br/><br/>
+
+                Here's to celebrating your dreams, your accomplishments, and the incredible person you are. May your wishes come true like magic, and may your heart always be surrounded by the warmth of love and the support of those who cherish you.<br/><br/>
+
+                Thank you for being the person you are and for sharing your beautiful soul with me. Cheers to celebrating the wonderful you on this special day and every day that follows. Happy Birthday, my love! 🎈❤️🥳
+            </p>
+        </div>
+        <div class="container-cotton">
+            <p>
+                I made the best cake you will ever find, just for you!<br/>
+                Blow the candle and cut the cake love....<br/><br/>
+                It's your birthday<br/>
+                <p>Play this Song and cut the cake <iframe style="border-radius:12px" 
+  src="https://open.spotify.com/embed/track/2ATrx8hOTXAZCBdlf6jKhs?utm_source=generator" 
+  width="300" height="80" frameBorder="0" allowfullscreen="" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy">
+</iframe>
+</p>
+          <!-- <span>
+                <video width="420px" height="300px" controls="controls" style="margin-left: 70px">
+                <source src="/145492-787039564.mp4" />
+          </span>       -->
+        <section id="birthday-cake-section">
+  <h2>Touch the Cake to Cut a Piece! 🎉</h2>
+
+  <div id="cake-wrapper">
+    <div id="cake">
+      <div class="candles">
+        <div class="candle"></div>
+        <div class="candle"></div>
+        <div class="candle"></div>
+      </div>
+      <div class="cake-layer layer1"></div>
+      <div class="cake-layer layer2"></div>
+      <div class="cake-layer layer3"></div>
+      <div class="cake-slice"></div>
+    </div>
+  </div>
+
+  <audio id="cut-sound" src="cut-sound.mp3" preload="auto"></audio>
+</section>
+
+
+<audio id="cut-sound" src="cut-sound.mp3" preload="auto"></audio>
+
+            <p>
+                Made with ❤ by Abhi
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+        <div style="text-align: center;">
+        	<h4>As you can see this a very private question because content in next page contains secrets of us , its only for You , so dont show it to your friends</h4>
+  	<h2>Question 5: What was the longest time we had sex in a day?</h2>
+  <form id="quizForm">
+    <input type="radio" id="a" name="answer" value="park"><label for="a">0.5-1hr</label><br>
+    <input type="radio" id="b" name="answer" value="cafe"><label for="b">2-3hr</label><br>
+    <input type="radio" id="c" name="answer" value="beach"><label for="c">10-12hr</label><br><br>
+    <button type="submit" id="btn-submit">Submit</button>
+    <p id="feedback"></p>
+  </form>
+  </div>
+  <script>
+  document.getElementById("quizForm").addEventListener("submit", function(e) {
+    e.preventDefault();  // Stop the default form submission
+    const choice = document.querySelector('input[name="answer"]:checked');
+
+    if (!choice) {
+      document.getElementById("feedback").textContent = "Please select an answer!";
+      return;
+    }
+
+    if (choice.id === "c") {
+      window.location.href = "page6.html";
+    } else {
+      document.getElementById("feedback").textContent = "Oops, try again!";
+    }
+  });
+</script>
+
+
+</body>
+</html>

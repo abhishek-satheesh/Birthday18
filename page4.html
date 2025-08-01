@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+	<title>Happy Birthday</title>
+</head>
+<body>
+	<script type="text/javascript" src="script.js"></script>
+        <div class="container">
+            <p>
+                Each card has one song and a quote for you. You can only choose one.<br/>
+                So, choose carefully baby...
+            </p>
+            <div class="card-container">
+                <div class="card" onclick="cardSelected(this)" style="background-color:  #3385ff; height: 400px; width: 280px">
+                    <h2>
+                        I LOVE YOU
+                    </h2>
+                    <p>
+                    	तेरे प्यार की गहराई में इतना खो गया हूँ कि अब खुद को ढूँढना भी नहीं चाहता।
+                    	<iframe style="border-radius:12px" 
+  src="https://open.spotify.com/embed/track/54PRUdMOYzglMGnsg9kIta?utm_source=generator" 
+  width="300" height="80" frameBorder="0" allowfullscreen="" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy">
+</iframe>
+
+                    </p>
+                    <font>
+                        💙
+                    </font>
+                </div>
+                <div class="card" onclick="cardSelected(this)" style="background-color: #00ff00; height: 400px; width: 280px">
+                    <h2>
+                        I LOVE YOU
+                    </h2>
+                    <p>
+                    	നീ എന്നിൽ നിന്നാലും, എന്റെ ഹൃദയം നിന്നിലായിരിക്കും.
+                    	<iframe style="border-radius:12px" 
+  src="https://open.spotify.com/embed/track/5nsyv2DwVisREEjoUzjdcK?utm_source=generator" 
+  width="300" height="80" frameBorder="0" allowfullscreen="" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy">
+</iframe>
+
+
+                    </p>
+                    <font>
+                        💚
+                    </font>
+                </div>
+                <div class="card" onclick="cardSelected(this)" style="background-color:#ff471a; height: 400px; width: 280px">
+                   <h2>
+                        I LOVE YOU
+                    </h2>
+                    <p>
+                    	Every moment without you is a moment of eternity.
+                    	<iframe style="border-radius:12px" 
+  src="https://open.spotify.com/embed/track/3zHq9ouUJQFQRf3cm1rRLu?utm_source=generator" 
+  width="100%" height="152" frameBorder="0" allowfullscreen="" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy">
+</iframe>
+                    </p>
+                    <font>
+                        ❤️
+                    </font>
+                </div>
+            </div>
+        </div>
+    </section>
+      <div style="text-align: center;">
+  	<h2>Question 4: How many days has it been since our relationship began?</h2>
+  <form id="quizForm">
+    <input type="radio" id="a" name="answer" value="park"><label for="a">647 days.</label><br>
+    <input type="radio" id="b" name="answer" value="cafe"><label for="b">668 days.</label><br>
+    <input type="radio" id="c" name="answer" value="beach"><label for="c">643 days.</label><br><br>
+    <button type="submit" id="btn-submit">Submit</button>
+    <p id="feedback"></p>
+  </form>
+  </div>
+  <script>
+  document.getElementById("quizForm").addEventListener("submit", function(e) {
+    e.preventDefault();  // Stop the default form submission
+    const choice = document.querySelector('input[name="answer"]:checked');
+
+    if (!choice) {
+      document.getElementById("feedback").textContent = "Please select an answer!";
+      return;
+    }
+
+    if (choice.id === "a") {
+      window.location.href = "page5.html";
+    } else {
+      document.getElementById("feedback").textContent = "Oops, try again!";
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Birthday</title>
+    <style type="text/css">
+    .body{
+      background-color: #E0BBE4;
+     }
+    </style>
+</head>
+<body>
+    
+        <div class="container-lum">
+            <img src="assets/img3.jpg" style="width: 500px; margin-left: 350px">
+        </div>
+        <div class="container-lum">
+            <p>
+                "You're not easygoing, but you're passionate, and that's good. And when you get upset about the little things, I think that I'm pretty good about making you feel better about that. And that's good, too. So, they can say that you're high-maintenance, but it's OK because I like maintaining you."
+                <br/><br/> — Chandler
+            </p>
+        </div>
+    
+    <div style="text-align: center;">
+    <h2>Question 3: Where would you like to go on a romantic getaway?</h2>
+     <form id="quizForm">
+      <input type="radio" id="a" name="answer" value="park"><label for="a">Secluded beach resort</label><br>
+      <input type="radio" id="b" name="answer" value="cafe"><label for="b">Historical city full of charm</label><br>
+      <input type="radio" id="c" name="answer" value="cafe"><label for="c">Spontaneous road-trip destination</label><br>
+      <input type="radio" id="d" name="answer" value="beach"><label for="d">Cozy cabin in the mountains</label><br><br>
+      <button type="submit" id="btn-submit">Submit</button>
+      <p id="feedback"></p>
+     </form>
+    </div>
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(e) {
+     e.preventDefault();  // Stop the default form submission
+    const choice = document.querySelector('input[name="answer"]:checked');
+
+    if (!choice) {
+      document.getElementById("feedback").textContent = "Please select an answer!";
+      return;
+    }
+
+    if (choice.id === "a") {
+      window.location.href = "page4.html";
+    } else {
+      document.getElementById("feedback").textContent = "Oops, try again!";
+    }
+  });
+</script>
+
+</body>
+</html>
